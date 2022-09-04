@@ -102,7 +102,7 @@ $(document).ready(function() {
 	$(".switch").click(function() {
 		if ($(this).hasClass("play")) {
 			pomodoro.runTimer();
-			$(this).html('<i class="pause icon"></i> Pause');
+			$(this).html('<i class="pause icon"></i> Пауза');
 			$(".reset").attr("disabled", true);
 		} else if ($(this).hasClass("pause")) {
 			pomodoro.pauseTimer();
