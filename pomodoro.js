@@ -106,7 +106,7 @@ $(document).ready(function() {
 			$(".reset").attr("disabled", true);
 		} else if ($(this).hasClass("pause")) {
 			pomodoro.pauseTimer();
-			$(this).html('<i class="play icon"></i> Play');
+			$(this).html('<i class="play icon"></i> Запуск');
 			$(".reset").attr("disabled", false);
 		}
 
