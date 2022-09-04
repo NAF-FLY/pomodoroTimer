@@ -2,7 +2,7 @@ $(document).ready(function() {
 	let sessionTime;
 	let breakTime;
 	let timerID;
-	let audio = new Audio('https://dl.dropboxusercontent.com/s/02y8d8zetwdz6rn/Ding%20-%20Sound%20Effects%20YouTube.wav');
+	let audio = new Audio('./audio/timer-bell_m1tycbno.mp3');
 
 	let pomodoro = {
 		setTimes: function(action) {
