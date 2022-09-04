@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	var sessionTime;
-	var breakTime;
-	var timerID;
-	var audio = new Audio('https://dl.dropboxusercontent.com/s/02y8d8zetwdz6rn/Ding%20-%20Sound%20Effects%20YouTube.wav');
+	let sessionTime;
+	let breakTime;
+	let timerID;
+	let audio = new Audio('https://dl.dropboxusercontent.com/s/02y8d8zetwdz6rn/Ding%20-%20Sound%20Effects%20YouTube.wav');
 
-	var pomodoro = {
+	let pomodoro = {
 		setTimes: function(action) {
 			switch (action) {
 				case "subtract-session":
@@ -40,7 +40,7 @@ $(document).ready(function() {
 			});
 		},
 		runTimer: function() {
-		 	var displayTime = $("#timer .time").text().split(':');
+		 	let displayTime = $("#timer .time").text().split(':');
 		 	pomodoro.timer(displayTime[0], displayTime[1]);
 		},
 		pauseTimer: function() {
